@@ -15527,128 +15527,324 @@
         <member name="P:ExactOnline.Client.Models.SalesOrder.SalesOrderLine.VATPercentage">
             <summary>The vat percentage of the VAT code. This is the percentage at the moment the sales order is created. It&apos;s also used for the default calculation of VAT amounts and VAT base amounts</summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Code">
-            <summary>Code to indicate the price list</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.ID">
+            <summary>
+            Primary key. Price list ID
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Created">
-            <summary>Creation date</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Code">
+            <summary>
+            Price list code
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Creator">
-            <summary>User ID of creator</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Created">
+            <summary>
+            Creation date
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.CreatorFullName">
-            <summary>Name of creator</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Creator">
+            <summary>
+            User ID of creator
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Currency">
-            <summary>All prices in the price list are stored in this currency</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.CreatorFullName">
+            <summary>
+            Name of creator
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Description">
-            <summary>Description</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Currency">
+            <summary>
+            All prices in the price list are stored in this currency
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Division">
-            <summary>Division code</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Description">
+            <summary>
+            Price list description
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.DivisionDescription">
-            <summary>Description of Division</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Division">
+            <summary>
+            Division code
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Entity">
-            <summary>Indicates the entity (Item, Item group, ..) on which this price list is based</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Entity">
+            <summary>
+            Indicates the entity (1 - Item, 2 - Item group) on which this price list is based
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.ID">
-            <summary>Primary key</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Modified">
+            <summary>
+            Last modified date
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Modified">
-            <summary>Last modified date</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Modifier">
+            <summary>
+            User ID of modifier
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Modifier">
-            <summary>User ID of modifier</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.ModifierFullName">
+            <summary>
+            Name of modifier
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.ModifierFullName">
-            <summary>Name of modifier</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceList.Notes">
+            <summary>
+            Explanation or extra information can be stored in the notes
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.PriceList.Notes">
-            <summary>Explanation or extra information can be stored in the notes</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.ID">
+            <summary>
+            Primary key. Customer account ID
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Account">
-            <summary>Customer account Id</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.Code">
+            <summary>
+            Customer account code, fixed length numeric string with leading spaces, length 18. IMPORTANT: When you use OData $filter on this field you have to make sure the filter parameter contains the leading spaces
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.AccountName">
-            <summary>Customer account name</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.Created">
+            <summary>
+            Creation date
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.BasePrice">
-            <summary>ID of the base price</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.Creator">
+            <summary>
+            User ID of creator
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.BasePriceAmount">
-            <summary>Amount of the base price</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.CreatorFullName">
+            <summary>
+            Name of creator
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Created">
-            <summary>Creation date</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.Division">
+            <summary>
+            Division code
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Creator">
-            <summary>User ID of creator</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.Modified">
+            <summary>
+            Last modified date
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.CreatorFullName">
-            <summary>Name of creator</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.Modifier">
+            <summary>
+            User ID of modifier
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Currency">
-            <summary>Currency</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.ModifierFullName">
+            <summary>
+            Name of modifier
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Discount">
-            <summary>Discount</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.Name">
+            <summary>
+            Customer account name
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Division">
-            <summary>Division code</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListLinkedAccount.PriceList">
+            <summary>
+            Price list ID
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.EndDate">
-            <summary>End date</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.ID">
+            <summary>
+            Primary key. Price list period ID 
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.EntryMethod">
-            <summary>Indicates whether discount or the new price is leading : 1-Discount, 2-New price. &lt;br&gt;&lt;br&gt; Scenario &lt;br&gt;&lt;br&gt; 1. When entry method is Discount and use base price, Discounted price = (1- SalesPriceListDetails.Discount) * SalesPriceListDetails.BasePrice &lt;br&gt;&lt;br&gt; 2. When entry method is Discount and use Item&apos;s standard sales price, Discounted price = (1- SalesPriceListDetails.Discount) * SalesItemPrices.Price &lt;br&gt;&lt;br&gt; 3. When entry method is New price, Discounted price = SalesPriceListDetails.NewPrice</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.Created">
+            <summary>
+            Creation date
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.ID">
-            <summary>Primary key</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.Creator">
+            <summary>
+            User ID of creator
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Item">
-            <summary>Item</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.CreatorFullName">
+            <summary>
+            Name of creator
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.ItemDescription">
-            <summary>Description of the item</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.Currency">
+            <summary>
+            All prices in the price list are stored in this currency
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.ItemGroup">
-            <summary>ItemGroup</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.Division">
+            <summary>
+            Division code
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.ItemUnit">
-            <summary>Default sales unit of the item</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.EndDate">
+            <summary>
+            Date when the price list should become inactive
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Modified">
-            <summary>Last modified date</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.Modified">
+            <summary>
+            Last modified date
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Modifier">
-            <summary>User ID of modifier</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.Modifier">
+            <summary>
+            User ID of modifier
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.ModifierFullName">
-            <summary>Name of modifier</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.ModifierFullName">
+            <summary>
+            Name of modifier
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.NewPrice">
-            <summary>New price after discount</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.PriceList">
+            <summary>
+            Price list ID
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.NumberOfItemsPerUnit">
-            <summary>Number of the item per unit</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.StartDate">
+            <summary>
+            Date for the price list start activate
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.PriceListCode">
-            <summary>Code of the PriceList</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListPeriod.Type">
+            <summary>
+            Indicate the type of price list : 1-Basic, 2-Special offer
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.PriceListId">
-            <summary>Id of the PriceList</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.ID">
+            <summary>
+            Primary key. Price list ID
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Quantity">
-            <summary>Quantity</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.BasePrice">
+            <summary>
+            ID of the base price. If base price = use the standard sales price, it shows null. If base price = set sales price, it shows ID of the sales price within this volume discount.
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.StartDate">
-            <summary>Start date</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.BasePriceAmount">
+            <summary>
+            Amount of the base price. If base price = use the standard sales price, it shows the latest item sales price. If base price = set sales price, it shows the base price which defined in price list.
+            </summary>
         </member>
-        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListDetail.Unit">
-            <summary>Unit</summary>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Created">
+            <summary>
+            Creation date
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Creator">
+            <summary>
+            User ID of creator
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.CreatorFullName">
+            <summary>
+            Name of creator
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Discount">
+            <summary>
+            Discount
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Division">
+            <summary>
+            Division code
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.EntryMethod">
+            <summary>
+            Indicates whether discount or the new price is leading : 1-Discount, 2-New price.
+            Scenario
+            1. When entry method is Discount and use base price, Discounted price = (1 - SalesPriceListDetails.Discount) * SalesPriceListDetails.BasePriceAmount
+            2. When entry method is Discount and use Item's standard sales price, Discounted price = (1 - SalesPriceListDetails.Discount) * SalesItemPrices.Price
+            3. When entry method is New price, Discounted price = SalesPriceListDetails.NewPrice
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Item">
+            <summary>
+            Item ID
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.ItemCode">
+            <summary>
+            Item code
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.ItemDescription">
+            <summary>
+            Description of the item
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.ItemGroup">
+            <summary>
+            Item group ID
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.ItemGroupCode">
+            <summary>
+            Item group code
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.ItemGroupDescription">
+            <summary>
+            Item group description
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Modified">
+            <summary>
+            Last modified date
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Modifier">
+            <summary>
+            User ID of modifier
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.ModifierFullName">
+            <summary>
+            Name of modifier
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.NewPrice">
+            <summary>
+            New price after discount
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.NumberOfItemsPerUnit">
+            <summary>
+            Number of the item per unit
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.PriceListCode">
+            <summary>
+            Code of the PriceList
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.PriceListDescription">
+            <summary>
+            Description of the PriceList
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.PriceListPeriod">
+            <summary>
+            Price list period ID
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Quantity">
+            <summary>
+            Quantity
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.SalesUnit">
+            <summary>
+            Default sales unit of the item
+            </summary>
+        </member>
+        <member name="P:ExactOnline.Client.Models.Sales.SalesPriceListVolumeDiscount.Unit">
+            <summary>
+            Unit
+            </summary>
         </member>
         <member name="P:ExactOnline.Client.Models.Sales.ShippingMethod.Active">
             <summary>Active</summary>

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <Configurations>Debug;Release</Configurations>
@@ -68,7 +68,6 @@
     <Folder Include="SalesEntry\" />
     <Folder Include="Purchase\" />
     <Folder Include="PurchaseEntry\" />
-    <Folder Include="Sales\" />
     <Folder Include="OpeningBalance\" />
     <Folder Include="SalesInvoice\" />
     <Folder Include="PurchaseOrder\" />
